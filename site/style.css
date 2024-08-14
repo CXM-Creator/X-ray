@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url("font/Varelmo.ttf");
+}
+
+@font-face {
+  font-family: fonte;
+  src: url("font/Montserrat-VariableFont_wght.ttf");
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: gray;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 25px;
+}
+
+.background {
+  background-image: url(img/4884841.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: black;
+}
+
+.ladinho {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.header1 {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 1px;
+  align-items: center;
+  background: white;
+  backdrop-filter: blur(15px);
+  height: 40px;
+  position: fixed;
+  z-index: 1;
+}
+body {
+  height: 100%px;
+}
+
+.logo img {
+  width: 20px;
+  height: auto;
+  margin-left: 2rem;
+  margin-top: 5px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  align-content: center;
+  margin-left: 100px;
+  font-size: 17px;
+  font-family: fonte;
+}
+
+ul li a:hover {
+  text-transform: capitalize;
+  color: black;
+  border-bottom: solid 1px;
+  border-radius: 1px;
+  transition: linear 0.1s;
+}
+
+.central {
+  text-align: justify;
+  padding: 100px;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  border: 0.2px solid white;
+  border-radius: 10px;
+  width: 80%;
+  font-size: 20px;
+  color: wheat;
+}
+
+.retornar1 {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.retornar1:hover {
+  color: rgb(58, 137, 255);
+  transition: ease-in-out 0.2s;
+  border: 1px solid black;
+}
+
+.frase {
+  color: wheat;
+  text-align: center;
+  border-bottom: 2px solid white;
+  width: 100%;
+  max-width: 100%;
+  font-size: 50px;
+}
+.card {
+  transform: rotateY(180deg);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid: gap 10px;
+}
+
+.tabelafoto {
+  flex: 1;
+  cursor: pointer;
+}
+
+.tabelafoto:hover {
+  flex: 5;
+}
+
+.cel {
+  width: 50%;
+  height: 50%;
+  transition: 1s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/*teste */
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button {
+  border-radius: 3px;
+  width: 100px;
+  height: 50px;
+  margin-top: 35%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  border-radius: 3px;
+  width: 100px;
+  height: 50px;
+  margin-top: 35%;
+  text-decoration: none;
+  border: none;
+}
+
+.links:hover {
+  color: white;
+  background-color: rgb(58, 137, 255);
+  border: none;
+  transition: 0.3s;
+  transform: scale(1.4);
+}
+
+/* fim teste*/
+
+.espacamento {
+  top: 10px;
+}
+
+.nomes {
+  padding-top: 40px;
+}
+
+.flip-card2 {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front2,
+.flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front2 {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back2 {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.links2 {
+  border-radius: 3px;
+  width: 100px;
+  height: 50px;
+  margin-top: 35%;
+  text-decoration: none;
+  border: none;
+}
+
+.links2:hover {
+  color: white;
+  background-color: darkmagenta;
+  border: none;
+  transition: 0.3s;
+  transform: scale(1.4);
+}
+
+.flip-card3 {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card3:hover .flip-card-inner3 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front3,
+.flip-card-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front3 {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back3 {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.links3 {
+  border-radius: 3px;
+  width: 100px;
+  height: 50px;
+  margin-top: 35%;
+  text-decoration: none;
+  border: none;
+}
+
+.links3:hover {
+  color: white;
+  background-color: darkmagenta;
+  border: none;
+  transition: 0.3s;
+  transform: scale(1.4);
+}
+
+.flex {
+  display: flex;
+}
+
+ol a {
+  color: white;
+}
+
+a span {
+  color: white;
+}
+
+a span:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+.celular {
+  list-style: url(https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f4f1.svg);
+}
+
+.txt-animado {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.txt-animado span {
+  position: relative;
+}
+
+a button:hover {
+  background-color: #212121;
+  border: none;
+}
+
+.txt-animado span::before {
+  content: "";
+  color: purple;
+  animation: digitando 30s infinite;
+}
+.txt-animado span::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  border-left: 2px solid purple;
+  right: -10px;
+  opacity: 1;
+  animation: piscando 0.8s infinite, sumindo 6s steps(15) infinite;
+  width: calc(100% + 10px);
+  background-color: black;
+}
+
+.fundo:hover {
+  background-color: white;
+  width: 100%;
+}
+
+@keyframes piscando {
+  0% {
+    border-left: 2px solid #212121;
+  }
+}
+
+@keyframes sumindo {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100%+10px);
+  }
+}
+
+@keyframes digitando {
+  0%,
+  20% {
+    content: "transformando o futuro.";
+  }
+  21%,
+  40% {
+    content: "com soluções inteligentes.";
+  }
+  41%,
+  60% {
+    content: "aproximando a tecnologia.";
+  }
+  61%,
+  80% {
+    content: "unindo a tecnologia.";
+  }
+  81%,
+  100% {
+    content: "melhorando o presente.";
+  }
+}
+
+@keyframes certo {
+  0%,
+  50%,
+  100% {
+    content: "Transformando ideias visionárias em realidades digitais, conectando você ao futuro com nossas soluções avançadas ";
+  }
+}
