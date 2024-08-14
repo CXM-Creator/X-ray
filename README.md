@@ -1,0 +1,3 @@
+## FALA, PESSOAL
+este site criei para uma amiga para um trabalho de empresa fictícia.
+gostei bastante do resultado e vamos aprimorar...
